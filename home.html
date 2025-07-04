@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A detailed 4‑day journey through six major companies—Foundever, Google, ADB, MicroSourcing, Teleperformance, Kollab—showcasing insights, culture, and innovation.">
+    <title>Inside Our 4‑Day Corporate Visit Tour: Foundever, Google, ADB, MicroSourcing, Teleperformance & Kollab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Add Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2c6bed',
+                        secondary: '#34495e',
+                        accent: '#e67e22',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --primary-color: #2c6bed;
+            --secondary-color: #34495e;
+            --accent-color: #e67e22;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --dark-bg: #2c3e50;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: #fbfbfd;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            cursor: pointer;
+        }
+        
+        /* Header */
+        header {
+            padding: 60px 0 30px;
+            position: relative;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #4a7dff 100%);
+            color: var(--white);
+            padding: 80px 0;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200') no-repeat center center/cover;
+            opacity: 0.15;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        /* Main content */
+        main {
+            padding: 40px 0;
+        }
+        
+        article {
+            background: var(--white);
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin: 30px 0 20px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            width: 60px;
+            background-color: var(--primary-color);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin: 25px 0 15px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+        
+        ul, ol {
+            margin: 0 0 25px 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        /* Table of Contents */
+        .toc {
+            background-color: var(--light-bg);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: var(--shadow);
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        .toc a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        
+        .toc a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+        
+        /* Images */
+        .image-container {
+            margin: 30px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+        
+        .image-placeholder {
+            background: linear-gradient(135deg, #e6e9f0 0%, #eef1f5 100%);
+            border-radius: 10px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+            color: #999;
+            font-size: 1.1rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .image-placeholder::before {
+            content: '\f03e';
+            font-family: 'Font Awesome 5 Free';
+            position: absolute;
+            font-size: 4rem;
+            opacity: 0.2;
+        }
+        
+        /* Quotes */
+        blockquote {
+            border-left: 5px solid var(--primary-color);
+            padding: 20px 30px;
+            margin: 30px 0;
+            background-color: rgba(44, 107, 237, 0.05);
+            border-radius: 0 10px 10px 0;
+            font-style: italic;
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+            position: relative;
+        }
+        
+        blockquote::before {
+            content: '\201C';
+            font-size: 4rem;
+            position: absolute;
+            left: 10px;
+            top: -10px;
+            color: var(--primary-color);
+            opacity: 0.3;
+        }
+        
+        /* Tips section */
+        .tips {
+            background: linear-gradient(to right, rgba(40, 167, 69, 0.1), rgba(40, 167, 69, 0.02));
+            padding: 30px;
+            border-radius: 10px;
+            margin: 40px 0;
+            border-left: 5px solid #28a745;
+            box-shadow: var(--shadow);
+        }
+        
+        .tips h2 {
+            color: #28a745;
+        }
+        
+        .tips h2::after {
+            background-color: #28a745;
+        }
+        
+        /* Day sections */
+        section[id^="day"] {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: var(--white);
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                flex-direction: column;
+                background-color: var(--white);
+                width: 100%;
+                text-align: center;
+                padding: 30px 0;
+                gap: 20px;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                transition: 0.4s;
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            article {
+                padding: 25px;
+            }
+            
+            .hero-section {
+                padding: 50px 0;
+            }
+            
+            .image-placeholder {
+                height: 250px;
+            }
+        }
+        
+        /* Animation effects */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        /* Read progress indicator */
+        .progress-container {
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1001;
+        }
+        
+        .progress-bar {
+            height: 4px;
+            background: var(--accent-color);
+            width: 0%;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">TourBlog</a>
+            <button class="mobile-toggle" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#tour-overview">Tour Overview</a></li>
+                <li><a href="#day1">Day 1</a></li>
+                <li><a href="#day2">Day 2</a></li>
+                <li><a href="#day3">Day 3</a></li>
+                <li><a href="#day4">Day 4</a></li>
+                <li><a href="#photo-gallery">Gallery</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#tips">Tips</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Inside Our 4‑Day Corporate Visit Tour</h1>
+            <p>Exploring Foundever, Google, ADB, MicroSourcing, Teleperformance & Kollab</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <main>
+            <article class="fade-in">
+                <p>Have you ever wondered what it's like behind the doors of some of the world's most innovative companies? Our recent corporate visit tour offered unprecedented access to six diverse organizations—ranging from tech giants to global financial institutions and BPO powerhouses. Over four intensive days, we gained insights into workplace cultures, operational strategies, and future-focused innovations that are shaping industries worldwide.</p>
+
+                <p>This immersive experience was designed to provide hands-on learning opportunities, build professional networks, and gather actionable insights from industry leaders. The diversity of organizations—from Google's tech campus to ADB's development headquarters—offered a comprehensive view of modern corporate landscapes.</p>
+
+                <p>Highlights included:</p>
+                <ul>
+                    <li>Experiencing Google's legendary campus culture and innovation showcases</li>
+                    <li>Understanding ADB's approach to global development challenges</li>
+                    <li>Comparing contrasting operational models at MicroSourcing and Teleperformance</li>
+                    <li>Exploring the future of work through Kollab's hybrid workspace innovations</li>
+                </ul>
+
+                <!-- Company Partner Logos Section - Using Tailwind CSS -->
+                <section id="partners" class="my-16">
+                    <h2 class="text-3xl font-bold text-secondary mb-8">Our Corporate Partners</h2>
+                    <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+                        <p class="text-gray-700 mb-6">We're grateful to the following organizations for hosting our visit tour and providing invaluable insights into their operations and culture:</p>
+                        
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center justify-items-center">
+                            <!-- Foundever -->
+                            <div class="w-full flex items-center justify-center p-4 bg-white rounded-lg shadow-sm transition-all hover:shadow-md">
+                                <div class="text-primary font-bold text-xl">Foundever</div>
+                            </div>
+                            
+                            <!-- Google -->
+                            <div class="w-full flex items-center justify-center p-4 bg-white rounded-lg shadow-sm transition-all hover:shadow-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 272 92">
+                                    <path fill="#EA4335" d="M115.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18C71.25 34.32 81.24 25 93.5 25s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44S80.99 39.2 80.99 47.18c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/>
+                                    <path fill="#FBBC05" d="M163.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18c0-12.85 9.99-22.18 22.25-22.18s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44s-12.51 5.46-12.51 13.44c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/>
+                                    <path fill="#4285F4" d="M209.75 26.34v39.82c0 16.38-9.66 23.07-21.08 23.07-10.75 0-17.22-7.19-19.66-13.07l8.48-3.53c1.51 3.61 5.21 7.87 11.17 7.87 7.31 0 11.84-4.51 11.84-13v-3.19h-.34c-2.18 2.69-6.38 5.04-11.68 5.04-11.09 0-21.25-9.66-21.25-22.09 0-12.52 10.16-22.26 21.25-22.26 5.29 0 9.49 2.35 11.68 4.96h.34v-3.61h9.25zm-8.56 20.92c0-7.81-5.21-13.52-11.84-13.52-6.72 0-12.35 5.71-12.35 13.52 0 7.73 5.63 13.36 12.35 13.36 6.63 0 11.84-5.63 11.84-13.36z"/>
+                                    <path fill="#34A853" d="M225 3v65h-9.5V3h9.5z"/>
+                                    <path fill="#EA4335" d="M262.02 54.48l7.56 5.04c-2.44 3.61-8.32 9.83-18.48 9.83-12.6 0-22.01-9.74-22.01-22.18 0-13.19 9.49-22.18 20.92-22.18 11.51 0 17.14 9.16 18.98 14.11l1.01 2.52-29.65 12.28c2.27 4.45 5.8 6.72 10.75 6.72 4.96 0 8.4-2.44 10.92-6.14zm-23.27-7.98l19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95 0-11.84 4.37-11.59 12.93z"/>
+                                    <path fill="#4285F4" d="M35.29 41.41V32H67c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.91.36 15.93 16.32.47 35.3.47c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.65l-22.49.01z"/>
+                                </svg>
+                            </div>
+                            
+                            <!-- ADB -->
+                            <div class="w-full flex items-center justify-center p-4 bg-white rounded-lg shadow-sm transition-all hover:shadow-md">
+                                <div class="text-primary font-bold text-lg">ADB</div>
+                            </div>
+                            
+                            <!-- MicroSourcing -->
+                            <div class="w-full flex items-center justify-center p-4 bg-white rounded-lg shadow-sm transition-all hover:shadow-md">
+                                <div class="text-primary font-bold text-lg">MicroSourcing</div>
+                            </div>
+                            
+                            <!-- Teleperformance -->
+                            <div class="w-full flex items-center justify-center p-4 bg-white rounded-lg shadow-sm transition-all hover:shadow-md">
+                                <div class="text-emerald-600 font-bold text-lg">Teleperformance</div>
+                            </div>
+                            
+                            <!-- Kollab -->
+                            <div class="w-full flex items-center justify-center p-4 bg-white rounded-lg shadow-sm transition-all hover:shadow-md">
+                                <div class="text-accent font-bold text-xl">Kollab</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="toc" id="tour-overview">
+                    <h2>Tour Overview</h2>
+                    <ul>
+                        <li><a href="#day1">Day 1 – Foundever & Google</a></li>
+                        <li><a href="#day2">Day 2 – Asian Development Bank (ADB)</a></li>
+                        <li><a href="#day3">Day 3 – MicroSourcing & Teleperformance</a></li>
+                        <li><a href="#day4">Day 4 – Kollab</a></li>
+                    </ul>
+                </section>
+
+                <section id="day1">
+                    <h2>Day 1 – Foundever & Google</h2>
+                    
+                    <h3>Foundever: Customer Experience Innovations</h3>
+                    <p>Our tour kicked off at Foundever, a global leader in customer experience management. We were greeted by their leadership team who walked us through their state-of-the-art contact center operations. The facility showcased how they've integrated AI-driven solutions with human expertise to deliver personalized customer experiences.</p>
+                    
+                    <p>What stood out was Foundever's commitment to employee well-being. Their workspace featured dedicated relaxation zones, training facilities, and an open-plan layout designed to foster collaboration. The operations manager shared how this environment has contributed to their impressive 87% employee retention rate—significantly above industry average.</p>
+                    
+                    <div class="image-placeholder"><img src="/img/90866bc0-2b36-4d73-aa2a-c427c3d99e99.jpeg" alt=""></div>
+                    
+                    <h3>Google: Where Innovation Meets Play</h3>
+                    <p>The afternoon transition to Google's campus felt like entering a different world. The playful aesthetics—from slides connecting floors to themed meeting rooms—immediately signaled Google's distinctive approach to workplace culture.</p>
+                    
+                    <p>Our guided tour included demonstrations of emerging technologies in Google's innovation lab. We witnessed firsthand how machine learning is being applied to solve complex problems in healthcare, sustainability, and education. A product manager explained their "20% time" policy, where employees dedicate one day weekly to passion projects—a practice that has spawned products like Gmail and Google Maps.</p>
+                    
+                    <p>The most surprising revelation? Despite its size, Google maintains a startup-like atmosphere through "micro-teams" that operate with significant autonomy while still leveraging the company's vast resources.</p>
+                    
+                    <div class="image-placeholder"><img src="/img/51e5acac-fdf4-4874-8b40-b0f34aff6f5f.jpeg" alt=""></div>
+                </section>
+
+                <section id="day2">
+                    <h2>Day 2 – Asian Development Bank (ADB)</h2>
+                    
+                    <p>Day two transported us from corporate innovation to global impact at the Asian Development Bank headquarters. As an international development finance institution, ADB works to reduce poverty and improve quality of life across Asia and the Pacific through loans, grants, and technical assistance.</p>
+                    
+                    <p>Our visit began with a comprehensive overview of ADB's mission and operational strategy from a senior economist. We learned how the bank balances economic growth objectives with environmental sustainability and social inclusion across its 68 member countries.</p>
+                    
+                    <p>The highlight was an executive roundtable discussion where project directors shared insights on current initiatives—from climate-resilient infrastructure in Pacific island nations to microfinance programs empowering women entrepreneurs in Southeast Asia. The complexity of coordinating multinational stakeholders while respecting local contexts became evident throughout these presentations.</p>
+                    
+                    <blockquote>"Development isn't about imposing solutions, but about creating partnerships that amplify local wisdom with global resources." — ADB Regional Director</blockquote>
+                    
+                    <p>We were particularly impressed by ADB's data visualization center, where interactive displays mapped project impacts across the region—showing how targeted interventions create ripple effects through economies and communities.</p>
+                    
+                    <div class="image-placeholder"><img src="/img/f30f760f-4f42-42d2-9791-e7723e694cc4.jpeg" alt=""></div>
+                </section>
+
+                <section id="day3">
+                    <h2>Day 3 – MicroSourcing & Teleperformance</h2>
+                    
+                    <h3>MicroSourcing: The Boutique Approach</h3>
+                    <p>Our third day began at MicroSourcing, where we explored their unique position in the outsourcing industry. Unlike mass-market BPO providers, MicroSourcing specializes in creating dedicated offshore teams that function as seamless extensions of their clients' operations.</p>
+                    
+                    <p>During our tour, the operations director explained their "embedded team" model, where professionals are exclusively assigned to a single client. This approach enables deeper specialization and stronger client relationships compared to traditional call center setups. We observed teams handling everything from financial analysis and creative design to customer support for clients across North America, Europe, and Australia.</p>
+                    
+                    <p>The company's talent acquisition strategy was particularly noteworthy—focusing on cultural fit and long-term potential over immediate skill matches. "We hire for attitude and train for skills," explained their HR director during an informal meet-and-greet session with team leaders.</p>
+                    
+                    <div class="image-placeholder"><img src="/img/de8ccaf8-d38f-4932-b091-32cac5de71ca.jpeg" alt=""></div>
+                    
+                    <h3>Teleperformance: Scale and Sophistication</h3>
+                    <p>The afternoon brought a striking contrast as we visited Teleperformance's massive operations center. As one of the world's largest BPO providers with over 300,000 employees globally, their facility operated on an impressive scale—housing thousands of agents supporting dozens of brands simultaneously.</p>
+                    
+                    <p>We were introduced to their advanced workforce management systems that optimize scheduling across time zones and channels. Their technology stack included AI-powered quality assurance tools that analyze customer interactions in real-time, flagging opportunities for coaching or intervention.</p>
+                    
+                    <p>Perhaps most eye-opening was their "digital integration suite" that enables agents to handle inquiries across multiple platforms (social media, chat, email, voice) from a unified interface. This technological approach was markedly different from MicroSourcing's emphasis on relationship depth.</p>
+                    
+                    <h3>Comparing Approaches</h3>
+                    <p>The back-to-back visits highlighted two valid but contrasting business models in the outsourcing world:</p>
+                    <ul>
+                        <li><strong>MicroSourcing</strong>: Boutique, high-touch, relationship-focused with deeper client integration</li>
+                        <li><strong>Teleperformance</strong>: Enterprise-scale, technology-driven, efficiency-oriented with broader service offerings</li>
+                    </ul>
+                    
+                    <div class="image-placeholder"><img src="/img/4be5e91b-9bdc-47bf-b09c-7c1673923f82.jpeg" alt=""></div>
+                </section>
+
+                <section id="day4">
+                    <h2>Day 4 – Kollab</h2>
+                    
+                    <p>Our final day brought us to Kollab, a forward-thinking workspace solution that blends coworking facilities with innovation incubation programs. As traditional offices continue evolving post-pandemic, Kollab represents the emerging "third space" that bridges remote and in-person work models.</p>
+                    
+                    <p>The facility itself told a story of adaptability—featuring modular furniture systems, technology-enhanced meeting spaces, and zones designed for different work modes from focused concentration to collaborative ideation. The community manager explained how their space utilization analytics help member companies optimize their hybrid work policies.</p>
+                    
+                    <p>We participated in a morning design thinking workshop that brought together professionals from various industries to tackle common hybrid work challenges. The cross-pollination of ideas—from a fintech startup's virtual onboarding process to a manufacturing firm's remote quality control system—demonstrated the value of collaborative innovation spaces.</p>
+                    
+                    <p>A panel discussion with Kollab's founding team revealed their vision for the future of work: not simply remote versus in-office, but a fluid ecosystem where physical and digital environments complement each other. Their membership model gives companies flexibility to scale their physical footprint up or down as needs change—a direct response to post-pandemic workplace uncertainty.</p>
+                    
+                    <p>What made Kollab particularly relevant was how it connected themes from our earlier visits: Google's emphasis on collaborative environments, ADB's global connectivity, and the distributed workforce models of MicroSourcing and Teleperformance. In many ways, spaces like Kollab are becoming the connective tissue between various work models.</p>
+                    
+                    <div class="image-placeholder"><img src="/img/6c1f34b4-407b-41dd-a784-3faf3c54cdf6.jpeg" alt=""></div>
+                </section>
+                
+                <!-- Photo Gallery Section using Tailwind CSS -->
+                <section id="photo-gallery" class="my-16">
+                    <h2 class="text-3xl font-bold text-secondary mb-8">Tour Photo Gallery</h2>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-md">
+                        <p class="text-gray-700 mb-8">Explore visual highlights from our corporate visit tour across all six companies:</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <!-- Image 1 -->
+                            <div class="relative overflow-hidden rounded-lg shadow-md group">
+                                <img src="/img/a8d10758-3e32-4729-bdb1-0b2c7ec72a20.jpeg" alt="Google campus tour" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                                    <h3 class="text-white font-semibold">Google Campus Tour</h3>
+                                    <p class="text-white/80 text-sm">Day 1: Interactive demonstration of Google's innovation lab</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Image 2 -->
+                            <div class="relative overflow-hidden rounded-lg shadow-md group">
+                                <img src="/img/aab52438-05c8-438a-8adf-32027ecdac65.jpeg" alt="ADB headquarters" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                                    <h3 class="text-white font-semibold">ADB Headquarters</h3>
+                                    <p class="text-white/80 text-sm">Day 2: Executive roundtable discussion with project directors</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Image 3 -->
+                            <div class="relative overflow-hidden rounded-lg shadow-md group">
+                                <img src="/img/dcdb22fc-6379-4cf0-90ed-ab14ad5aec53.jpeg" alt="Foundever workspace" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                                    <h3 class="text-white font-semibold">Foundever Workspace</h3>
+                                    <p class="text-white/80 text-sm">Day 1: Employee relaxation zones and collaborative areas</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Image 4 -->
+                            <div class="relative overflow-hidden rounded-lg shadow-md group">
+                                <img src="/img/639500bb-72bd-4403-9cbb-e00dcd0c7307.jpeg" alt="Teleperformance command center" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                                    <h3 class="text-white font-semibold">Teleperformance Command Center</h3>
+                                    <p class="text-white/80 text-sm">Day 3: Monitoring real-time customer interaction metrics</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Image 5 -->
+                            <div class="relative overflow-hidden rounded-lg shadow-md group">
+                                <img src="/img/005a06c9-3d08-4d8b-a5d7-697f5226a9e8.jpeg" alt="MicroSourcing team" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                                    <h3 class="text-white font-semibold">MicroSourcing Teams</h3>
+                                    <p class="text-white/80 text-sm">Day 3: Meet and greet with dedicated client teams</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Image 6 -->
+                            <div class="relative overflow-hidden rounded-lg shadow-md group">
+                                <img src="/img/4daba28f-0780-4757-9f2f-64a02121c415.jpeg" alt="Kollab workshop" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                                    <h3 class="text-white font-semibold">Kollab Design Thinking Workshop</h3>
+                                    <p class="text-white/80 text-sm">Day 4: Collaborative problem-solving session</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 text-center">
+                            <button class="bg-primary hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition-all shadow-md hover:shadow-lg">
+                                View Full Gallery
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Conclusion</h2>
+                    
+                    <p>As our four-day corporate tour concluded, several unifying themes emerged despite the diverse nature of the organizations we visited. Innovation clearly thrives in environments that balance structure with flexibility, regardless of industry or company size. Each organization—from Google's playful campus to ADB's purpose-driven headquarters—had intentionally designed their spaces and processes to reflect their values and objectives.</p>
+                    
+                    <p>The human element remained central across all six companies. Whether through Foundever's investment in employee wellbeing, MicroSourcing's relationship-focused teams, or Kollab's community-building approach, successful organizations prioritize connecting people meaningfully to their work and colleagues.</p>
+                    
+                    <p>Technology integration varied widely in implementation but was universally critical. From Teleperformance's sophisticated customer interaction analytics to ADB's impact visualization systems, digital tools are increasingly embedded in organizational DNA rather than treated as separate initiatives.</p>
+                    
+                    <p>Perhaps most notably, the boundaries between industries, sectors, and work models are becoming increasingly fluid. The cross-pollination of ideas—like Google's approach to problem-solving influencing development finance at ADB, or outsourcing innovations shaping hybrid work models at Kollab—suggests that organizational learning increasingly transcends traditional boundaries.</p>
+                    
+                    <p>Have you experienced a corporate visit that changed your perspective on an organization or industry? What insights from our tour resonated most with your professional experience? We'd love to hear your thoughts in the comments below!</p>
+                </section>
+
+                <section class="tips" id="tips">
+                    <h2>Tips & Takeaways for Planning Your Own Corporate Visit Tour</h2>
+                    
+                    <ol>
+                        <li><strong>Prepare targeted questions</strong>: Research each company thoroughly and develop specific questions that go beyond general information you could find online. The most valuable insights often come from asking the right questions.</li>
+                        
+                        <li><strong>Connect the dots across visits</strong>: Rather than treating each company visit as isolated, look for themes, contrasts, and connections. Keep a running list of observations that you can compare across organizations.</li>
+                        
+                        <li><strong>Engage with multiple levels</strong>: While executive presentations provide valuable high-level perspectives, some of our most insightful conversations happened with mid-level managers and front-line employees who could speak to day-to-day realities.</li>
+                        
+                        <li><strong>Document in real-time</strong>: Take photos (when permitted), record voice notes immediately after each visit, and organize digital materials provided by the companies before the details fade.</li>
+                        
+                        <li><strong>Follow up meaningfully</strong>: Send personalized thank-you notes to your hosts with specific references to valuable insights they shared, and connect on professional networks to maintain relationships beyond the tour.</li>
+                    </ol>
+                </section>
+            </article>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Published on July 4, 2025 | Corporate Visits | Professional Development</p>
+            <p>&copy; 2025 TourBlog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        document.getElementById('mobile-toggle').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('active');
+        });
+        
+        // Scroll progress indicator
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Close mobile menu when link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('nav-links').classList.remove('active');
+            });
+        });
+        
+        // Fade-in animation for elements as they scroll into view
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('section, .image-placeholder, blockquote').forEach(el => {
+            el.style.opacity = "0";
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
